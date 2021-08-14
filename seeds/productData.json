@@ -8,7 +8,7 @@
     },
     {
         "id": 2,
-        "product_name": "can of soup",
+        "product_name": "can of chicken noodle soup",
         "experation_date": "21/8/2023",
         "user_id": 1,
         "category_id": 4
