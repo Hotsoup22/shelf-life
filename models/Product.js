@@ -10,16 +10,16 @@ Product.init({
     primaryKey: true,
     autoIncrement: true,
   },
-  Product_name: {
+  product_name: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  datePurchased: {
+  date_purchased: {
     type: DataTypes.DATE,
     allowNull: false,
     defaultValue: DataTypes.NOW,
   },
-  experationDate: {
+  experation_date: {
     type: DataTypes.STRING,
     allowNull: true,
   },
@@ -30,6 +30,13 @@ Product.init({
       key: "id",
     },
   },
+  category_id: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: "category",
+      key: "id",
+    },
+  }
 });
 
 module.exports = Product;
