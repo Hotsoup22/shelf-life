@@ -7,52 +7,55 @@
     <title>Shelf Life</title>
     {{!-- CSS --}}
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <section class="leftAside">
-        <div class="brandTitle">
-            <h1>
-                SHELF
-            </h1>
-            <h1>
-                LIFE
-            </h1>
-        </div>
-        <div class="asideForm">
-            <form class="loginForm">
-                <div class="form-group">
-                    <input class="formInput" type="text" id="emailLogin" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <input class="formInput" type="password" id="passwordLogin" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <button class="formBtn" type="submit" id="loginBtn">Login!</button>
-                </div>
-            </form>
-        </div>
-        <div class="asideForm">
-            <form class="signupForm">
-                <div class="form-group">
-                    <input class="formInput" type="text" id="nameSignup" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <input class="formInput" type="text" id="emailSignup" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <input class="formInput" type="password" id="passwordSignup" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <button class="formBtn" type="submit" id="signupBtn">Create Account!</button>
-                </div>
-            </form>
-        </div>
-        <a class="pantryNav" href="/pantry">
-            <h2>Your Pantry</h2>
-        </a>
-        <button id="logoutBtn">Logout</button>
-    </section>
+    <main>
+        <section class="leftAside">
+            <a class="brandTitle" href="/">
+                <h1>SHELF</h1>
+                <h1>LIFE</h1>
+            </a>
+            <div class="asideForm">
+                <form class="loginForm">
+                    <div class="form-group">
+                        <input class="formInput" type="text" id="emailLogin" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input class="formInput" type="password" id="passwordLogin" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="formBtn" type="submit" id="loginBtn">Login!</button>
+                    </div>
+                </form>
+            </div>
+            <div class="asideForm">
+                <form class="signupForm">
+                    <div class="form-group">
+                        <input class="formInput" type="text" id="nameSignup" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input class="formInput" type="text" id="emailSignup" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input class="formInput" type="password" id="passwordSignup" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="formBtn" type="submit" id="signupBtn">Create Account!</button>
+                    </div>
+                </form>
+            </div>
+            <a class="pageNav" href="/pantry">
+                <h2>Your Pantry</h2>
+            </a>
+            <a class="pageNav" href="/addItems">
+                <h2>Add Items</h2>
+            </a>
+            <button id="logoutBtn">Logout</button>
+        </section>
+        {{{ body }}}
+    </main>
 
 </body>
 </html>

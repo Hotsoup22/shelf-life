@@ -16,5 +16,16 @@ router.get('/', async (req, res) => {
     }
 });
 
+// Render Add Products page
+router.get('/addItems', async (req, res) => {
+    try {
+
+        res.render('addItems');
+        
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 // Export
 module.exports = router;
