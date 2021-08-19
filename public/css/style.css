@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftAside {
+    display: inline-block;
+    width: 320px;
+    border: solid 1px black;
+}
+
