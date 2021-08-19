@@ -20,14 +20,24 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
+    email:{
       type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
+      validate:{
+          notEmpty:{
+              args:true,
+              msg:"Email-id required"
+          },
+          isEmail:{
+              args:true,
+              msg:'Valid email-id required'
+          }
       },
-    },
+      unique: {
+          args:true,
+          msg: 'Email address already in use!'
+      }
+
+  },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
