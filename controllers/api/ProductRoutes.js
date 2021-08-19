@@ -1,12 +1,10 @@
 //  const express = require('express');
  const router = require("express").Router();
  const withAuth = require('../../utils/auth')
- const {Product} = require('../../models')
+ const {Product, Category, User} = require('../../models')
 
  
- 
-
- //get Product data
+ //Create Product
  router.post('/', withAuth, async (req, res,) => {
   try {
     const newProduct = await Product.create({
@@ -19,7 +17,8 @@
     res.status(400).json(err);
   }
 });
-// Delete blogpost
+
+// Delete product
 router.delete('/:id', withAuth, async (req, res) => {
   try {
       const ProductData = await Product.destroy({
@@ -34,15 +33,17 @@ router.delete('/:id', withAuth, async (req, res) => {
       res.status(400).json(err);
   }
 });
+
+// Get all products
 router.get("/", async (req, res) => {
   try {
-    const findAllProduct = await findAllProduct.findAll({
-      include:  [{ model: Category }],
-      attributes: { exclude: ["password"] },
-      order: [["name", "ASC"]],
+    const productsData = await Product.findAll({
+      include:  [{ model: Category }, { model: User,
+        attributes: { exclude: ["password"] } }],
+      order: [["product_name", "ASC"]],
     });
 
-    res.json(userData);
+    res.json(productsData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -50,7 +51,3 @@ router.get("/", async (req, res) => {
   
 
 module.exports = router;
-      
-     
-  
- 
