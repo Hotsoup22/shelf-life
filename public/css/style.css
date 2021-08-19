@@ -1,3 +1,7 @@
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -7,5 +11,9 @@ main {
     display: inline-block;
     width: 320px;
     border: solid 1px black;
+}
+
+h1 {
+    font-family: 'Recursive', Arial, Helvetica, sans-serif;
 }
 
