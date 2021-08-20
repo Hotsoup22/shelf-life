@@ -4,9 +4,9 @@ const router = require('express').Router();
 // Required files
 const userRoutes = require('./userRoutes');
 
-
+// /api/
 // Routing
-router.use('/', userRoutes);
+router.use('/users', userRoutes);
 
 
 // Export
