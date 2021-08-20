@@ -18,7 +18,11 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
+
       document.location.replace('/addItems');
+      document.querySelector(".form-group").style.display = "none";
+      // document.querySelector('.loginForm').css("display","none")
+      
     } else {
       alert('Failed to log in');
     }
