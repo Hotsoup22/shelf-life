@@ -1,3 +1,19 @@
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --htmlBG: #f5f2eb;
+    --titleText: #ddbe96;
+    --titleBG: #21233f;
+    --asideBG: #353966;
+}
+
+html {
+    background-color: var(--htmlBG);
+    height: 100%;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -6,6 +22,87 @@ main {
 .leftAside {
     display: inline-block;
     width: 320px;
-    border: solid 1px black;
+    height: 100%;
+    background-color: var(--asideBG);
+    padding-bottom: 50px;
 }
 
+.brandTitle, .brandTitle a {
+    text-decoration: none;
+    background-color: var(--titleBG);
+    padding: 10px 0;
+    border-bottom: var(--titleText) solid 8px;
+}
+
+h1 {
+    font-family: 'Recursive', Arial, Helvetica, sans-serif;
+    color: var(--titleText);
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.shelf {
+    border-bottom: var(--titleText) solid 3px;
+}
+
+.loginForm, .signupForm {
+    padding: 40px 0;
+    border-bottom: var(--titleText) solid 8px;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.formInput {
+    width: 97%;
+    margin: 10px auto;
+}
+
+input {
+    height: 1.5rem;
+}
+
+.formBtn, #logoutBtn {
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin: 0px auto;
+    background-color: var(--titleText);
+    color: var(--titleBG);
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    transition: background-color .3s;
+}
+
+.formBtn:hover, #logoutBtn:hover {
+    background-color: var(--htmlBG);
+    transition: background-color .3s;
+}
+
+.pageNav, .pageNav a {
+    text-decoration: none;
+    background-color: var(--titleText);
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 15px;
+    padding: 15px 0;
+    transition: background-color .3s;
+}
+
+h2 {
+    color: var(--titleBG);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.pageNav:hover {
+    background-color: var(--htmlBG);
+    transition: background-color .3s;
+}
