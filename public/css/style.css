@@ -11,6 +11,7 @@
 
 html {
     background-color: var(--htmlBG);
+    height: 100%;
 }
 
 main {
@@ -21,7 +22,9 @@ main {
 .leftAside {
     display: inline-block;
     width: 320px;
+    height: 100%;
     background-color: var(--asideBG);
+    padding-bottom: 50px;
 }
 
 .brandTitle, .brandTitle a {
@@ -64,7 +67,7 @@ input {
     height: 1.5rem;
 }
 
-.formBtn {
+.formBtn, #logoutBtn {
     display: block;
     width: 80%;
     height: 30px;
@@ -77,7 +80,29 @@ input {
     transition: background-color .3s;
 }
 
-.formBtn:hover {
+.formBtn:hover, #logoutBtn:hover {
+    background-color: var(--htmlBG);
+    transition: background-color .3s;
+}
+
+.pageNav, .pageNav a {
+    text-decoration: none;
+    background-color: var(--titleText);
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 15px;
+    padding: 15px 0;
+    transition: background-color .3s;
+}
+
+h2 {
+    color: var(--titleBG);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.pageNav:hover {
     background-color: var(--htmlBG);
     transition: background-color .3s;
 }
