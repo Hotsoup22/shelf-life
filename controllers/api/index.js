@@ -6,7 +6,7 @@ const userRoutes = require('./userRoutes');
 const productRoutes = require('./productRoutes')
 
 // Routing
-router.use('/', userRoutes);
+router.use('/users', userRoutes);
 router.use('/product', productRoutes);
 
 

@@ -1,3 +1,5 @@
+//api/users
+
 const router = require("express").Router();
 const { User, Product, Category } = require("../../models");
 
