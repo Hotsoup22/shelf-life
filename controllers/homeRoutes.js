@@ -27,5 +27,16 @@ router.get('/addItems', async (req, res) => {
     }
 });
 
+// Render Pantry page
+router.get('/pantry', async (req, res) => {
+    try {
+
+        res.render('pantry');
+        
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 // Export
 module.exports = router;

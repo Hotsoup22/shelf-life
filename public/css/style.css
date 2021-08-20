@@ -9,7 +9,7 @@
     --asideBG: #353966;
 }
 
-html {
+html, body {
     background-color: var(--htmlBG);
     height: 100%;
 }
@@ -106,3 +106,18 @@ h2 {
     background-color: var(--htmlBG);
     transition: background-color .3s;
 }
+
+.sectionContent {
+    margin: 0 50px;
+    flex: 1;
+}
+
+.listContainer {
+    width: 100%;
+}
+
+.listRow {
+    display: flex;
+    
+}
+
