@@ -8,6 +8,10 @@
     --titleText: #ddbe96;
     --titleBG: #21233f;
     --asideBG: #353966;
+    --expired: #cc4f46;
+    --thisWeek: #cca246;
+    --thisMonth: #99cc46;
+    --noRush: #4690cc;
 }
 
 html, body {
@@ -136,7 +140,7 @@ h4 {
     margin: 0;
     margin-bottom: 15px;
     font-size: 1.5rem;
-    color: var(--titleText);
+    color: var(--htmlBG);
 }
 
 .listRow {
@@ -157,6 +161,24 @@ h5 {
     flex: 0 0 180px;
 }
 
+.expired {
+    background-color: var(--expired);
+}
+
+.thisWeek {
+    background-color: var(--thisWeek);
+}
+
+.thisMonth {
+    background-color: var(--thisMonth);
+}
+
+.noRush {
+    background-color: var(--noRush);
+}
+
 .deleteX {
     flex: 0 0 20px;
+    background-color: var(--titleText);
+    color: rgb(146, 25, 25);
 }
