@@ -2,6 +2,11 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
+:root {
+    --titleText: #ddbe96;
+    --titleBG: #272a4b;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +18,24 @@ main {
     border: solid 1px black;
 }
 
+.brandTitle, .brandTitle a {
+    text-decoration: none;
+    background-color: var(--titleBG);
+    padding: 10px 0;
+    border-bottom: var(--titleText) solid 6px;
+}
+
 h1 {
     font-family: 'Recursive', Arial, Helvetica, sans-serif;
+    color: var(--titleText);
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.shelf {
+    border-bottom: var(--titleText) solid 3px;
 }
 
