@@ -18,7 +18,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/pantry');
+      document.location.replace('/addItems');
     } else {
       alert('Failed to log in');
     }
