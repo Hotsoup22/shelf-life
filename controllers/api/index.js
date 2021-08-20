@@ -3,10 +3,11 @@
 const router = require('express').Router();
 // Required files
 const userRoutes = require('./userRoutes');
+const productRoutes = require('./productRoutes')
 
-// /api/
 // Routing
 router.use('/users', userRoutes);
+router.use('/product', productRoutes);
 
 
 // Export
