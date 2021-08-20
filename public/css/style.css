@@ -3,8 +3,14 @@
 }
 
 :root {
+    --htmlBG: #f5f2eb;
     --titleText: #ddbe96;
-    --titleBG: #272a4b;
+    --titleBG: #21233f;
+    --asideBG: #353966;
+}
+
+html {
+    background-color: var(--htmlBG);
 }
 
 main {
@@ -15,14 +21,14 @@ main {
 .leftAside {
     display: inline-block;
     width: 320px;
-    border: solid 1px black;
+    background-color: var(--asideBG);
 }
 
 .brandTitle, .brandTitle a {
     text-decoration: none;
     background-color: var(--titleBG);
     padding: 10px 0;
-    border-bottom: var(--titleText) solid 6px;
+    border-bottom: var(--titleText) solid 8px;
 }
 
 h1 {
@@ -39,3 +45,39 @@ h1 {
     border-bottom: var(--titleText) solid 3px;
 }
 
+.loginForm, .signupForm {
+    padding: 40px 0;
+    border-bottom: var(--titleText) solid 8px;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.formInput {
+    width: 97%;
+    margin: 10px auto;
+}
+
+input {
+    height: 1.5rem;
+}
+
+.formBtn {
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin: 0px auto;
+    background-color: var(--titleText);
+    color: var(--titleBG);
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    transition: background-color .3s;
+}
+
+.formBtn:hover {
+    background-color: var(--htmlBG);
+    transition: background-color .3s;
+}
