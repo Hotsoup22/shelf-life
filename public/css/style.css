@@ -1,5 +1,6 @@
 * {
     font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -108,15 +109,54 @@ h2 {
 }
 
 .sectionContent {
-    margin: 0 50px;
     flex: 1;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    background-color: var(--titleText);
+    color: var(--titleBG);
+    padding: 26px 50px;
+}
+
+.allLists {
+    margin: 50px;
 }
 
 .listContainer {
     width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: var(--asideBG);
+    border-radius: 10px;
+}
+
+h4 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--titleText);
 }
 
 .listRow {
     display: flex;
-    
+    background-color: var(--htmlBG);
+}
+
+h5 {
+    color: var(--titleBG);
+    font-size: 1rem;
+    margin: 0;
+    padding: 5px;
+    border: solid var(--titleBG) 1px;
+    flex: 1;
+}
+
+.tag {
+    flex: 0 0 180px;
+}
+
+.deleteX {
+    flex: 0 0 20px;
 }
