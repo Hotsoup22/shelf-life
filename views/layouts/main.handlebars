@@ -23,6 +23,19 @@
                     <h1>LIFE</h1>
                 </a>
             </div>
+            {{#if logged_in}}
+            <div class="pageNav">
+                <a href="/pantry">
+                    <h2>Your Pantry</h2>
+                </a>
+            </div>
+            <div class="pageNav">
+                <a href="/addItems">
+                    <h2>Add Items</h2>
+                </a>
+            </div>
+            <button id="logoutBtn">Logout</button>
+            {{else}}
             <div class="asideForm">
                 <form class="loginForm">
                     <div class="form-group">
@@ -52,17 +65,7 @@
                     </div>
                 </form>
             </div>
-            <div class="pageNav">
-                <a href="/pantry">
-                    <h2>Your Pantry</h2>
-                </a>
-            </div>
-            <div class="pageNav">
-                <a href="/addItems">
-                    <h2>Add Items</h2>
-                </a>
-            </div>
-            <button id="logoutBtn">Logout</button>
+            {{/if}}
         </section>
         {{{ body }}}
     </main>
