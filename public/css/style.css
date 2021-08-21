@@ -158,7 +158,7 @@ h5 {
 }
 
 .tag {
-    flex: 0 0 180px;
+    flex: 0 0 100px;
 }
 
 .expired {
@@ -177,6 +177,14 @@ h5 {
     background-color: var(--noRush);
 }
 
+.category {
+    flex: 0 0 100px;
+}
+
+.purchased {
+    flex: 0 0 100px;
+}
+
 .deleteX {
     flex: 0 0 20px;
     background-color: var(--titleText);
@@ -187,6 +195,7 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .form-group-two {
