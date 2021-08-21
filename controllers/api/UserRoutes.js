@@ -18,6 +18,25 @@ router.get("/", async (req, res) => {
   }
 });
 
+//get one user's pantry
+router.get("/:id", async (req, res) => {
+  try {
+    const userPantryData = await User.findByPk(req.params.id, {
+      include: [{model: Product,
+          include: [{model: Category}],
+      }],
+      attributes: { 
+          exclude: ["password"] 
+      },
+      order: [[ Product, 'expiration_date', 'ASC' ]]
+    });
+
+    res.json(userPantryData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 //create new user
 router.post("/", async (req, res) => {
   try {

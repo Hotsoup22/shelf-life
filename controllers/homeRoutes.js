@@ -3,13 +3,15 @@
 const router = require('express').Router();
 // Required files
 const { User, Product, Category } = require('../models');
-// const serialize = require('../utils/serialize');
+const serialize = require('../utils/serialize');
 
 // Home route, render welcome page
 router.get('/', async (req, res) => {
     try {
 
-        res.render('homepage');
+        res.render('homepage', {
+            logged_in: req.session.logged_in
+        });
         
     } catch (err) {
         res.status(500).json(err);
@@ -20,7 +22,14 @@ router.get('/', async (req, res) => {
 router.get('/addItems', async (req, res) => {
     try {
 
-        res.render('addItems');
+        const userRawData = await User.findByPk(req.session.user_id)
+
+        const userData = userRawData.get({ plain: true });
+
+        res.render('addItems', {
+            userData,
+            logged_in: req.session.logged_in
+        });
         
     } catch (err) {
         res.status(500).json(err);
@@ -31,7 +40,22 @@ router.get('/addItems', async (req, res) => {
 router.get('/pantry', async (req, res) => {
     try {
 
-        res.render('pantry');
+        const userPantryData = await User.findByPk(req.session.user_id, {
+            include: [{model: Product,
+                include: [{model: Category}],
+            }],
+            attributes: { 
+                exclude: ["password"] 
+            },
+            order: [[ Product, 'expiration_date', 'ASC' ]]
+        });
+
+        const userPantry = userPantryData.get({ plain: true });
+
+        res.render('pantry', {
+            userPantry,
+            logged_in: req.session.logged_in
+        });
         
     } catch (err) {
         res.status(500).json(err);
