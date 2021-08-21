@@ -247,3 +247,34 @@ label {
         width: 176px;
     }
 }
+
+@media screen and (max-width: 610px) {
+
+    .sectionContent {
+        width: 100%;
+    }
+
+    h3 {
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .allLists {
+        margin: 10px 0;
+    }
+
+    .listContainer, .itemEntryCard {
+        padding: 15px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 95%;
+    }
+
+    .form-group-two {
+        flex: 1 1 80%;
+    }
+
+    input, select {
+        width: 100%;
+    }
+}
