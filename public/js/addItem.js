@@ -1,6 +1,6 @@
 window.onload = function() {
-    document.querySelector(".loginForm").style.display = "none";
-    document.querySelector(".signupForm").style.display = "none";
+    // document.querySelector(".loginForm").style.display = "none";
+    // document.querySelector(".signupForm").style.display = "none";
     // document.getElementById("#userName").textContent = "";
   };
 const addItem = async (event) => {
