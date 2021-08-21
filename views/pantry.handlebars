@@ -13,13 +13,11 @@
         </div>
         <div class="listContainer">
             <h4>Still Usable</h4>
-            <div class="listRow">
-                <h5 class="thisWeek tag">This Week 8/25/2021</h5>
-                <h5>Orange Juice</h5>
-                <h5>Fridge</h5>
-                <h5>Purchased: 8/10/2021</h5>
-                <h5 class="deleteX">X</h5>
-            </div>
+            {{#each userPantry.products as |product|}}
+                {{#if (weekCheck product.expiration_date)}}
+                    {{> itemWeek }} 
+                {{/if}}
+            {{/each}}
             <div class="listRow">
                 <h5 class="thisMonth tag">This Month 9/4/2021</h5>
                 <h5>Cereal</h5>

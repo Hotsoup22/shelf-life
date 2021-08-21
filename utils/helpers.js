@@ -11,11 +11,20 @@ module.exports = {
     },
 
     expiredCheck: (date) => {
-        expired = DateTime.fromISO(date);
+        expiration = DateTime.fromISO(date);
         today = DateTime.now();
 
-        dateDifference = (expired.diff(today)).as('days');
+        dateDifference = (expiration.diff(today)).as('days');
 
-        if (dateDifference < 0) return true;
+        if (dateDifference <= 0) return true;
+    },
+
+    weekCheck: (date) => {
+        expiration = DateTime.fromISO(date);
+        today = DateTime.now();
+
+        dateDifference = (expiration.diff(today)).as('days');
+
+        if (dateDifference > 0 && dateDifference <= 7) return true;
     }
 };
