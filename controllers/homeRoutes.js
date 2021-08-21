@@ -22,7 +22,12 @@ router.get('/', async (req, res) => {
 router.get('/addItems', async (req, res) => {
     try {
 
+        const userRawData = await User.findByPk(req.session.user_id)
+
+        const userData = userRawData.get({ plain: true });
+
         res.render('addItems', {
+            userData,
             logged_in: req.session.logged_in
         });
         
