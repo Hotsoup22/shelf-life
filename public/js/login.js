@@ -1,4 +1,4 @@
-//login 
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
   console.log("loginbtn clicked")
@@ -18,7 +18,11 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
+
       document.location.replace('/addItems');
+      
+   
+      
     } else {
       alert('Failed to log in');
     }
@@ -28,6 +32,10 @@ const loginFormHandler = async (event) => {
 document
   .querySelector('.loginForm')
   .addEventListener('submit', loginFormHandler);
+//-------------------------------------------------------------s
+
+
+
   // Handle logging out the user
 const logout = async () => {
   console.log("logout btn")
