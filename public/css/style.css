@@ -74,7 +74,7 @@ input {
 
 .formBtn, #logoutBtn, .addItemBtn {
     display: block;
-    width: 80%;
+    width: 55%;
     height: 30px;
     margin: 0px auto;
     background-color: var(--titleText);
@@ -93,10 +93,10 @@ input {
 .pageNav, .pageNav a {
     text-decoration: none;
     background-color: var(--titleText);
-    width: 90%;
+    width: 75%;
     margin: 40px auto;
     border-radius: 15px;
-    padding: 15px 0;
+    padding: 5px 0;
     transition: background-color .3s;
 }
 
@@ -221,4 +221,29 @@ label {
 .addItemBtn {
     width: 60%;
     margin-top: 20px;
+}
+
+/* --------------------------------------------------------------- */
+/* Media Queries */
+@media screen and (max-width: 910px) {
+
+    main {
+        height: initial;
+    }
+
+    .leftAside{
+        width: 100%;
+    }
+
+    .pageNav, .pageNav a {
+        width: 240px;
+    }
+
+    .form-group {
+        width: 300px;
+    }
+
+    .formBtn, #logoutBtn, .addItemBtn {
+        width: 176px;
+    }
 }
