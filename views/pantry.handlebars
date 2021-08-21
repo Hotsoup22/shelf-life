@@ -5,12 +5,11 @@
     <div class="allLists">
         <div class="listContainer">
             <h4>Expired!</h4>
-            <div class="listRow">
-                <h5 class="expired tag">Exp. 8/17/2021</h5>
-                <h5>Apples</h5>
-                <h5>Produce</h5>
-                <h5 class="deleteX">X</h5>
-            </div>
+            {{#each userPantry.products as |product|}}
+                {{#if (expiredCheck product.expiration_date)}}
+                   {{> itemExpired }}
+                {{/if}}
+            {{/each}}
         </div>
         <div class="listContainer">
             <h4>Still Usable</h4>

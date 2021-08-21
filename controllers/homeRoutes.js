@@ -37,11 +37,12 @@ router.get('/pantry', async (req, res) => {
 
         const userPantryData = await User.findByPk(req.session.user_id, {
             include: [{model: Product,
-                include: [{model: Category}]}
-            ],
+                include: [{model: Category}],
+            }],
             attributes: { 
                 exclude: ["password"] 
-            }
+            },
+            order: [[ Product, 'expiration_date', 'ASC' ]]
         });
 
         const userPantry = userPantryData.get({ plain: true });
