@@ -26,7 +26,7 @@ const addItem = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/pantry');
+            document.location.replace('/addItems');
             console.log("name" + product_name);
             console.log("category" +  category_id);
             console.log("date_p" + date_purchased);

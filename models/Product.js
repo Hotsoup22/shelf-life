@@ -16,12 +16,12 @@ Product.init(
       allowNull: false,
     },
     date_purchased: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
        defaultValue: DataTypes.NOW,
       allowNull: false,
     },
     expiration_date: {
-      type: DataTypes.STRING,
+      type: DataTypes.DATEONLY,
       allowNull: true,
     },
     user_id: {
