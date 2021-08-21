@@ -1,6 +1,6 @@
-<section class="sectionContent">
+
     <div>
-        <h3 id="userName">Hello User!</h3>
+        <h3 id="userName">Hello {{userData.name}}!</h3>
     </div>
     <div class="allLists">
         <div class="itemEntryCard">
@@ -20,7 +20,7 @@
                     </select>
                 </div>
                 <div class="form-group-two">
-                    <label for="purchaseDate">Date Purchased: Blank is Today</label><br>
+                    <label for="purchaseDate">Date Purchased<span><br></span> Blank is Today</label><br>
                     <input class="addItemInput" type="text" id="purchaseDate" placeholder="M/D/YYYY">
                 </div>
                 <div class="form-group-two">
@@ -33,6 +33,5 @@
             </form>
         </div>
     </div>
-</section>
-{{!-- <script src="/js/login.js"></script>; --}}
+
 <script src="/js/addItem.js"></script>

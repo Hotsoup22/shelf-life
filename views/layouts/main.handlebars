@@ -23,6 +23,20 @@
                     <h1>LIFE</h1>
                 </a>
             </div>
+            {{#if logged_in}}
+            <div class="pageNav">
+                <a href="/pantry">
+                    <h2>Your Pantry</h2>
+                </a>
+            </div>
+            <div class="pageNav">
+                <a href="/addItems">
+                    <h2>Add Items</h2>
+                </a>
+            </div>
+            <button id="logoutBtn">Logout</button>
+            <script src="/js/logout.js"></script>
+            {{else}}
             <div class="asideForm">
                 <form class="loginForm">
                     <div class="form-group">
@@ -52,22 +66,13 @@
                     </div>
                 </form>
             </div>
-            <div class="pageNav">
-                <a href="/pantry">
-                    <h2>Your Pantry</h2>
-                </a>
-            </div>
-            <div class="pageNav">
-                <a href="/addItems">
-                    <h2>Add Items</h2>
-                </a>
-            </div>
-            <button id="logoutBtn">Logout</button>
+            <script src="/js/login.js"></script>
+            <script src="/js/signup.js"></script>
+            {{/if}}
         </section>
-        {{{ body }}}
+        <section class="sectionContent">
+            {{{ body }}}
+        </section>
     </main>
-<script src="/js/login.js"></script>
-{{!-- <script src="/js/logout.js"></script>; --}}
-<script src="/js/signup.js"></script> 
 </body>
 </html>
