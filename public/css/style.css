@@ -239,6 +239,7 @@ label {
 .bodyText{
     font-size: 1.2rem;
       margin: 25px;
+      color:#353966;
 }
 .addList{
     display: flex;
