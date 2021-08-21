@@ -19,7 +19,7 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
 
-      document.location.replace('/addItems');
+      document.location.replace('/pantry');
       
    
       
