@@ -26,5 +26,14 @@ module.exports = {
         dateDifference = (expiration.diff(today)).as('days');
 
         if (dateDifference > 0 && dateDifference <= 7) return true;
+    },
+
+    monthCheck: (date) => {
+        expiration = DateTime.fromISO(date);
+        today = DateTime.now();
+
+        dateDifference = (expiration.diff(today)).as('days');
+
+        if (dateDifference > 7 && dateDifference <= 30) return true;
     }
 };
