@@ -17,10 +17,10 @@ Product.init(
     },
     date_purchased: {
       type: DataTypes.DATE,
+       defaultValue: DataTypes.NOW,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
-    experation_date: {
+    expiration_date: {
       type: DataTypes.STRING,
       allowNull: true,
     },
