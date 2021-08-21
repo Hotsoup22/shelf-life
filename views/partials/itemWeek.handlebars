@@ -1,7 +1,7 @@
 <div class="listRow">
-    <h5 class="thisWeek tag">This Week {{formatSequelDate expiration_date}}</h5>
+    <h5 class="thisWeek tag">This Week<span><br></span> {{formatSequelDate expiration_date}}</h5>
     <h5>{{product_name}}</h5>
-    <h5>{{category.category_name}}</h5>
-    <h5>Purchased: {{formatSequelDate date_purchased}}</h5>
+    <h5 class="category">{{category.category_name}}</h5>
+    <h5 class="purchased">Purchased<span><br></span> {{formatSequelDate date_purchased}}</h5>
     <h5 class="deleteX">X</h5>
 </div>
