@@ -270,6 +270,19 @@ label {
         width: 95%;
     }
 
+    .listRow {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    
+    .category {
+        flex: 1 1 auto;
+    }
+
+    .break {
+        flex: 1 1 100%
+    }
+
     .form-group-two {
         flex: 1 1 80%;
     }
