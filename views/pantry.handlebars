@@ -18,15 +18,9 @@
                     {{> itemWeek }}
                 {{else if (monthCheck product.expiration_date)}}
                     {{> itemMonth }}
-                {{else}}
+                {{else if (noRushCheck product.expiration_date)}}
+                    {{> itemNoRush }}
                 {{/if}}
             {{/each}}
-            <div class="listRow">
-                <h5 class="noRush tag">No Rush 10/30/2021</h5>
-                <h5>Ice Cream</h5>
-                <h5>Freezer</h5>
-                <h5>Purchased: 8/10/2021</h5>
-                <h5 class="deleteX">X</h5>
-            </div>
         </div>
     </div>

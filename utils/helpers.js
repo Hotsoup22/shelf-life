@@ -35,5 +35,14 @@ module.exports = {
         dateDifference = (expiration.diff(today)).as('days');
 
         if (dateDifference > 7 && dateDifference <= 30) return true;
+    },
+
+    noRushCheck: (date) => {
+        expiration = DateTime.fromISO(date);
+        today = DateTime.now();
+
+        dateDifference = (expiration.diff(today)).as('days');
+
+        if (dateDifference > 30) return true;
     }
 };
