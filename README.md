@@ -41,7 +41,7 @@
 
 ## Demo
 
-  ![README](./Assets/images/RMEPIC.PNG)
+  ![README](./public/assets/shelflifevideo.gif)
 
 
 ## License
