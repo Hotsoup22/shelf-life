@@ -16,7 +16,7 @@ module.exports = {
 
         dateDifference = (expiration.diff(today)).as('days');
 
-        if (dateDifference <= 0) return true;
+        if (dateDifference < -1) return true;
     },
 
     weekCheck: (date) => {
@@ -25,7 +25,7 @@ module.exports = {
 
         dateDifference = (expiration.diff(today)).as('days');
 
-        if (dateDifference > 0 && dateDifference <= 7) return true;
+        if (dateDifference >= -1 && dateDifference <= 7) return true;
     },
 
     monthCheck: (date) => {
