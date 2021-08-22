@@ -217,10 +217,53 @@ label {
     font-size: 1.2rem;
     font-weight: 500;
 }
+.homeP{
+    background-image: url("https://images.pexels.com/photos/7060815/pexels-photo-7060815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    content:inherit;
+ 
+}
 
 .addItemBtn {
     width: 60%;
     margin-top: 20px;
+}
+
+.introPage{
+    margin: 25px;
+    
+    
+}
+
+.backG{
+    color:#353966;
+    
+}
+
+.bodyText{
+    font-size: 1.2rem;
+      margin: 25px;
+      color:#353966;
+}
+
+.addList{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.howTo{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-left: 25px;
+    
+}
+
+ul, li{
+    line-height: 200%;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: circle;
 }
 
 /* --------------------------------------------------------------- */
