@@ -249,5 +249,13 @@ label {
     display: flex;
     justify-content: flex-start;
     font-size: 2rem;
+    text-decoration: underline;
+    padding-left: 25px;
     
+}
+ul, li{
+    line-height: 200%;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: circle;
 }
