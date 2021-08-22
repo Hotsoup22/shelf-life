@@ -20,9 +20,10 @@ const addItem = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/addItems');
+            document.location.replace('/addItems');    
+           
         } else {
-            alert('alert');
+            alert('Failed to add Item.');
         }
     } else if (product_name && category_id && expiration_date) {
         const response = await fetch('/api/product', {
@@ -34,7 +35,7 @@ const addItem = async (event) => {
         if (response.ok) {
             document.location.replace('/addItems');
         } else {
-            alert('alert');
+            alert('Failed to add Item. Please enter a expiration date.');
         }
     }
 };
