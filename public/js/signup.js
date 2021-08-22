@@ -17,7 +17,7 @@ const signupFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/pantry');
       } else {
-        alert(response.statusText);
+        alert("Failed to Create Account! Please make sure the information is correct. "+response.statusText);
       }
     }
   };

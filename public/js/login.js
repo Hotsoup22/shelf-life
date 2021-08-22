@@ -24,7 +24,7 @@ const loginFormHandler = async (event) => {
    
       
     } else {
-      alert('Failed to log in');
+      alert('Failed to log in. Please make sure information is correct, and try again.');
     }
   }
 };
