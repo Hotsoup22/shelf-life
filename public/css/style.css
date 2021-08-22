@@ -74,7 +74,7 @@ input {
 
 .formBtn, #logoutBtn, .addItemBtn {
     display: block;
-    width: 80%;
+    width: 55%;
     height: 30px;
     margin: 0px auto;
     background-color: var(--titleText);
@@ -93,10 +93,10 @@ input {
 .pageNav, .pageNav a {
     text-decoration: none;
     background-color: var(--titleText);
-    width: 90%;
+    width: 75%;
     margin: 40px auto;
     border-radius: 15px;
-    padding: 15px 0;
+    padding: 5px 0;
     transition: background-color .3s;
 }
 
@@ -227,24 +227,29 @@ label {
     width: 60%;
     margin-top: 20px;
 }
+
 .introPage{
     margin: 25px;
     
     
 }
+
 .backG{
     color:#353966;
     
 }
+
 .bodyText{
     font-size: 1.2rem;
       margin: 25px;
       color:#353966;
 }
+
 .addList{
     display: flex;
     justify-content: flex-start;
 }
+
 .howTo{
     display: flex;
     justify-content: flex-start;
@@ -253,9 +258,80 @@ label {
     padding-left: 25px;
     
 }
+
 ul, li{
     line-height: 200%;
     font-weight: bold;
     font-size: 20px;
     list-style-type: circle;
+}
+
+/* --------------------------------------------------------------- */
+/* Media Queries */
+@media screen and (max-width: 910px) {
+
+    main {
+        height: initial;
+    }
+
+    .leftAside{
+        width: 100%;
+    }
+
+    .pageNav, .pageNav a {
+        width: 240px;
+    }
+
+    .form-group {
+        width: 300px;
+    }
+
+    .formBtn, #logoutBtn, .addItemBtn {
+        width: 176px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+    .sectionContent {
+        width: 100%;
+    }
+
+    h3 {
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .allLists {
+        margin: 10px 0;
+        margin-top: 30px;
+    }
+
+    .listContainer, .itemEntryCard {
+        padding: 15px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 95%;
+    }
+
+    .listRow {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    
+    .category {
+        flex: 1 1 auto;
+    }
+
+    .break {
+        flex: 1 1 100%
+    }
+
+    .form-group-two {
+        flex: 1 1 80%;
+    }
+
+    input, select {
+        width: 100%;
+    }
 }
