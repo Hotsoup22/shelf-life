@@ -3,9 +3,13 @@
 
 ## Description
 
-- The object of this app is to give the user a more effective way of tracking the food items they buy.
+- The objective of this app is to give the user a more effective way of tracking the food items they buy.
 - This project was developed to help user's know which food items are about expire.
 - Having this App technology will benefit the user saving them time and money.
+
+## Live Site
+
+https://shelf-life-206.herokuapp.com/
 
 ## Credits
 
@@ -35,13 +39,13 @@
 ## Installation
 >The first thing you need to do is to go into VScode and create a folders/files project. 
 
->Then install npm inquirer, MySql2, Express, connect-session-sequelize, bcrypt, express-handlebars, dotenv, sequelize.
+>Then install npm inquirer, MySql2, Express, connect-session-sequelize, bcrypt, express-handlebars, dotenv, sequelize and luxon.
 
->Then your dependencies will be added package.json, & package-lock.json
+>Then your dependencies will be added to package.json, & package-lock.json
 
 ## Demo
 
-  ![README](./public/assets/shelflifevideo.gif)
+  <img src="./public/assets/shelflifevideo.gif" width="1200" alt="Animated gif demonstration of web app"/>
 
 
 ## License
