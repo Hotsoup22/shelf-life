@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS shelflife_db;
+DROP DATABASE IF EXISTS btn7nfb1v9r7gnoo;
 
-CREATE DATABASE shelflife_db;
+CREATE DATABASE btn7nfb1v9r7gnoo;
